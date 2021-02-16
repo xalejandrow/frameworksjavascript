@@ -46,46 +46,30 @@
         
     </header>
 
-    <div id="slider" class="slider-big">
-        <h1>Bienvenido al Curso de React con Victor Robles en victorroblesweb.es</h1>
-        <a href="#" class="btn-white">Ir al blog</a>
-    </div>
 
     <div class="center">
         <section id="content">
-            <h2 class="subheader">Últimos artículos</h2>
-
-            <script type="text/javascript">
-                window.addEventListener("load", function(){
-                    var template = document.getElementById("article-template");
-                    var articles = document.getElementById("articles");
-                    for (var i=1; i<= 5; i++){
-                        var clonado = template.cloneNode(true);
-                        h2 = clonado.getElementsByTagName("h2")[0];
-                        clonado.removeAttribute("id");
-                        h2.innerHTML = h2.textContent + ' ' + i;
-                        articles.appendChild(clonado);
-                    }
-                });
-                    
-            </script>
-
-            <!-- Listado de artículos -->
-            <div id="articles">
-                <article class="article-item" id="article-template">
+        
+                <article class="article-item article-detail">
                     <div class="image-wrap">
                         <img src="./assets/images/4 paisaje macedonia.jpg" alt="paisaje">
                     </div>
-                    <h2>Artículo de prueba</h2>
+                    <h1 class="subheader">Artículo de prueba</h1>
                     <span class="date">
                         Hace 5 minutos
                     </span>
-                    <a href="#">Leer más</a>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam a neque quis imperdiet. Sed sagittis, nulla a hendrerit vulputate, metus elit lacinia tortor, id efficitur est ligula eget elit. In sed pulvinar tellus. Maecenas sit amet varius tellus. Etiam vestibulum eros hendrerit tincidunt vehicula. Nunc tellus felis, lobortis et viverra nec, ullamcorper eget neque. Integer vel enim quis tellus sollicitudin faucibus in sed massa. Nulla quis enim leo. Sed mollis hendrerit massa sit amet auctor. Vestibulum maximus dignissim cursus.
+                    </p>
+                    <p>
+                        Pellentesque leo augue, consequat nec lacus in, cursus hendrerit eros. Mauris felis ex, blandit ut interdum non, rutrum id mi. Pellentesque accumsan ut libero sit amet interdum. Suspendisse in nulla arcu. In ac justo vitae tortor tristique lobortis non eu elit. Sed sem dui, hendrerit ut iaculis nec, suscipit at urna. Aliquam maximus dolor eleifend urna commodo, non egestas metus molestie. Etiam ultricies odio sem, sed tempus augue lacinia ut. Donec quis neque nulla. Mauris facilisis ipsum sed lacinia pretium. Praesent feugiat, ligula sed hendrerit maximus, urna urna venenatis nibh, bibendum consectetur sem lectus a metus. Etiam quis tortor eros. Sed in luctus nulla, vitae luctus lorem.
+                    </p>
+                    <p>
+                        Maecenas placerat ornare lorem, pellentesque gravida nibh ultrices sit amet. In pretium metus eu nunc tincidunt, ac volutpat risus mattis. Cras dignissim gravida lacus, ut malesuada enim scelerisque at. Aliquam consequat urna nec enim efficitur, quis sagittis sem placerat. Curabitur et aliquam lorem. Nullam volutpat massa id pretium eleifend. Nam varius ac magna ut blandit. Nam rhoncus facilisis ante a ornare. Etiam at mattis ligula, varius rhoncus lacus. Duis gravida magna eu lobortis laoreet. Quisque a nulla vitae dolor sodales mollis quis sed magna. Sed mauris metus, rhoncus in ultrices at, dictum sit amet ligula. 
+                    </p>
 
                     <div class="clearfix"></div>
                 </article>
-                <!-- AÑADIR ARTICULOS VÍA JS -->
-            </div>
             
 
         </section>
